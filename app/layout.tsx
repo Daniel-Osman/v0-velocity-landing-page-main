@@ -1,7 +1,6 @@
 import type React from "react"
 import type { Metadata, Viewport } from "next"
 import { Space_Grotesk, JetBrains_Mono, Manrope } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
 const spaceGrotesk = Space_Grotesk({
@@ -104,7 +103,7 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
   category: "technology",
-    generator: 'v0.app'
+  generator: 'v0.app'
 }
 
 export const viewport: Viewport = {
@@ -169,7 +168,6 @@ export default function RootLayout({
       </head>
       <body className="font-sans antialiased min-h-screen relative">
         {children}
-        <Analytics />
       </body>
     </html>
   )

@@ -1,5 +1,7 @@
 import { articles } from "@/lib/articles"
 
+export const runtime = 'edge';
+
 export async function GET() {
   const baseUrl = "https://velocity.tech"
 
