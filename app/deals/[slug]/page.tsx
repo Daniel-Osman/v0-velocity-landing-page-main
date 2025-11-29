@@ -32,7 +32,7 @@ export async function generateMetadata({
     openGraph: {
       title: `${deal.title} - ${deal.discount}% Off | VELOCITY Deals`,
       description: deal.description,
-      type: "product",
+      type: "website",
       images: [{ url: deal.image, width: 1200, height: 630, alt: deal.title }],
     },
     alternates: {
